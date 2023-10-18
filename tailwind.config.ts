@@ -18,8 +18,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        'display': ['Fraunces', 'ui-serif', 'Georgia'],
-        'sans': ['Montserrat', 'ui-sans-serif'],
+        'display': ['var(--font-fraunces)', 'ui-serif', 'Georgia'],
+        'sans': ['var(--font-montserrat)', 'ui-sans-serif'],
       },
     },
   },

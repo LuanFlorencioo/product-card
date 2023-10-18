@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import { Fraunces, Montserrat } from 'next/font/google'
 import './globals.css'
 
-const fraunces = Fraunces({ subsets: ['latin'] })
-const montserrat = Montserrat({ subsets: ['latin'] })
+const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-fraunces' })
+const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fraunces.className} ${montserrat.className}`}>
+      <body className={`${fraunces.variable} ${montserrat.variable}`}>
         {children}
       </body>
     </html>
